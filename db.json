@@ -4,6 +4,37 @@
       "email": "olivier@mail.com",
       "password": "$2a$10$W86CzMYrwPwDKTO3mOgAsOuD02asStzQfdW4LoNAR.TC7.q4kjRMK",
       "id": 1
+    },
+    {
+      "email": "taz@taz.com",
+      "password": "$2a$10$RnRbBLV8mYZ3Lg8h1FR78.koXdNv/SfNWPTj1/DBioFCa2fduSxi.",
+      "id": 2
+    },
+    {
+      "email": "olivierXX@mail.com",
+      "password": "$2a$10$LF.CMpbj1FVR7a2u7MGOouoeBtgJeHILta2hXUJlo9tPsmTcazZUy",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "id": 3
+    },
+    {
+      "email": "moetazbusiness@gmail.com",
+      "password": "$2a$10$mFTfHgZ8AdsA9EjDV5hiGOJdu5OThmtW2D1hBbObHgwMClFe2NiwO",
+      "name": "moetazbusiness@gmail.com",
+      "id": 4
+    },
+    {
+      "email": "moetassszbusiness@gmail.com",
+      "password": "$2a$10$4SiaIGxtGECAlG4URQ3UFuzENGQRx24yloamxhDZ2pvEFnw7JiFD6",
+      "name": "moetazbussssiness@gmail.com",
+      "id": 5
+    },
+    {
+      "email": "moetazbaezusiness@gmail.com",
+      "password": "$2a$10$fcVbHrABLSZQN6kjveuWi.Dd0lkYwr8stFpldxn.WeYWKlLuXz83O",
+      "name": "Moetaz brayek",
+      "id": 6
     }
   ]
 }
