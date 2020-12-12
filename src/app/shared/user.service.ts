@@ -33,7 +33,7 @@ export class UserService {
   }
   login(data: any): Observable<any> {
     console.log(data);
-    const url = 'http://localhost:3000/login';
+    const url = 'http://localhost:3000/users';
     return this.http.post(url, data);
   }
 

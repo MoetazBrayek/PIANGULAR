@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Dec 2020 21:22:55 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iofrm</title>
+</head>
+<body>
+<div class="form-body">
+  <div class="website-logo">
+      <div class="">
+        <img class="logo-size" src="../../../assets/images/programmer.svg" alt="">
+      </div>
+  </div>
+  <div class="row">
+    <div class="img-holder">
+      <div class="bg"></div>
+      <div class="info-holder">
+        <img src="../../../assets/images/graphic1.svg" alt="">
+      </div>
+    </div>
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3>Get more things done with Loggin platform.</h3>
+          <p>Access to the most powerfull tool in the entire design and web industry.</p>
+          <div class="page-links">
+            <a routerLink="/">Login</a><a routerLink="/register"  class="active">Register</a>
+          </div>
+          <form [formGroup]="form" (ngSubmit)="userService.submit(form.value)">
+            <input class="form-control" formControlName="name" type="text"  placeholder="Full Name" >
+            <div class="alert alert-danger" *ngIf="!form.get('name').valid && form.get('name').touched  ">Required Name</div>
+
+            <input class="form-control" formControlName="email" type="email" name="email" placeholder="E-mail Address" required>
+            <div class="alert alert-danger" *ngIf="!form.get('email').valid && form.get('email').touched ">Required A Valid Email</div>
+
+            <input class="form-control"  formControlName="password" type="password" name="password" placeholder="Password" required>
+            <div class="alert alert-danger" *ngIf="!form.get('password').valid && form.get('password').touched ">Required Password</div>
+
+            <div class="form-button">
+              <button id="submit" type="submit" class="btn btn-primary" [disabled]="!form.get('password').valid && !form.get('email').valid && !form.get('name').valid">Register</button>
+            </div>
+          </form>
+          <div class="other-links">
+            <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/register4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Dec 2020 21:22:55 GMT -->
+</html>
+
+

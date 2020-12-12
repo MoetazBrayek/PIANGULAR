@@ -1,0 +1,18 @@
+
+
+<div class="container addblogform ">
+<form class="d-flex flex-column justify-content-center"  [formGroup]="form" (ngSubmit)="blogService.submit(form.value)">
+  <input formControlName="title"  name="title"  class="form-control" placeholder="title"  >
+
+  <ckeditor formControlName="content"  name="content" class="" [editor]="Editor"></ckeditor>
+  <div class="form-group">
+    <label>image</label>
+    <input id="file" type="file" formControlName="image" (change)="onFileChange($event)">
+  <img [src]="imageSrc" *ngIf="imageSrc" style="height: 100px; width:100px">
+
+
+
+</div>
+  <button type="submit" class="btn btn-success  align-self-center btn-lg submitbtn">Add Blog</button>
+</form>
+</div>

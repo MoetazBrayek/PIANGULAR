@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Dec 2020 21:22:01 GMT -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iofrm</title>
+</head>
+<body>
+<div class="form-body">
+  <div class="website-logo">
+    <a href="index-2.html">
+      <div class="">
+        <img class="logo-size" src="../../../assets/images/programmer.svg" alt="">
+      </div>
+    </a>
+  </div>
+  <div class="row">
+    <div class="img-holder">
+      <div class="bg"></div>
+      <div class="info-holder">
+        <img src="../../../assets/images/graphic1.svg" alt="">
+      </div>
+    </div>
+    <div class="form-holder">
+      <div class="form-content">
+        <div class="form-items">
+          <h3>Get more things done with Loggin platform.</h3>
+          <p>Access to the most powerfull Tech BLog !! for ALl The News</p>
+          <div class="page-links">
+            <a routerLink="/login" class="active">Login</a><a routerLink="/register">Register</a>
+          </div>
+          <form #data="ngForm">
+            <input   class="form-control" type="text" name="username" placeholder="E-mail Address" ngModel name="username" #username="ngModel">
+            <input  class="form-control" type="password" name="password" placeholder="Password" ngModel name="password" #password="ngModel">
+            <div class="form-button">
+              <button id="submit" type="submit" class="ibtn"  (click)="loginchek(data)">Login</button>
+            </div>
+          </form>
+          <div class="other-links">
+            <span>Or login with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<!-- Mirrored from brandio.io/envato/iofrm/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Dec 2020 21:22:04 GMT -->
+</html>
