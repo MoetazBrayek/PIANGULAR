@@ -32,7 +32,7 @@
             <a routerLink="/login" class="active">Login</a><a routerLink="/register">Register</a>
           </div>
           <form #data="ngForm">
-            <input   class="form-control" type="text" name="username" placeholder="E-mail Address" ngModel name="username" #username="ngModel">
+            <input   class="form-control" type="text" name="email" placeholder="E-mail Address" ngModel name="email" #email="ngModel">
             <input  class="form-control" type="password" name="password" placeholder="Password" ngModel name="password" #password="ngModel">
             <div class="form-button">
               <button id="submit" type="submit" class="ibtn"  (click)="loginchek(data)">Login</button>

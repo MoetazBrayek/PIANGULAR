@@ -6,7 +6,7 @@
     <!-- /.col-lg-3 -->
 
 
-      <div class="row" *ngFor="let blog of blogs">
+      <div class="row" *ngFor="let blog of blogs| paginate: { itemsPerPage : 2, currentPage :p }; ">
 
         <div class="col-lg-12 col-md-12 mb-4">
           <div class="card h-100">
@@ -16,15 +16,18 @@
                 <a  [routerLink]="['/shw/',blog.id]">{{blog.title}}</a>
 
               </h4>
-              <p [innerHTML]="blog.content"></p>
-
+              <div ng-init="limit=100">
+              <p [innerHTML]="blog.content "></p>
+              </div>
             </div>
+
 
           </div>
         </div>
 
 
       </div>
+    <pagination-controls class="form-control" (pageChange)="p =$event"></pagination-controls>
       <!-- /.row -->
 
     </div>

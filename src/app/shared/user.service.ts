@@ -33,7 +33,7 @@ export class UserService {
   }
   login(data: any): Observable<any> {
     console.log(data);
-    const url = 'http://localhost:3000/users';
+    const url = 'http://localhost:3000/login/';
     return this.http.post(url, data);
   }
 
@@ -46,7 +46,7 @@ export class UserService {
   submit(form) {
     this.adduser(form)
       .subscribe(() => {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/']);
 
         },
         (error) => {

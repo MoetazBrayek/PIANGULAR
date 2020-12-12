@@ -23,7 +23,9 @@
     "@ckeditor/ckeditor5-build-classic": "^24.0.0",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1",
+    "jw-angular-pagination": "^1.2.0",
     "ng2-ckeditor": "^1.2.9",
+    "ngx-pagination": "^5.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

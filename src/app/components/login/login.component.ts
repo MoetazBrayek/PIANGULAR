@@ -25,11 +25,11 @@ export class LoginComponent implements OnInit {
         this.users = resp;
         const logeed = data.value;
         for (const user of this.users) {
-          if (user.email === logeed.username && user.password === logeed.password) {
-            this.router.navigate(['home']);
+          if (user.email === logeed.email && user.password === logeed.password && user.role === 'admin' ) {
+            this.router.navigate(['admin']);
           }
-          if (user.email === logeed.username && user.password === logeed.password) {
-          console.log('problem');
+          else if (user.email === logeed.email && user.password === logeed.password) {
+            this.router.navigate(['home']);
           }
         }
       }

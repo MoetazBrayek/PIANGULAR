@@ -9,7 +9,12 @@ import {BlogService} from '../../shared/blog.service';
 })
 export class HomeComponent implements OnInit {
   blogs;
+  p = 1;
+  pageOfItems: Array<any>;
+
+
   constructor(private blogService: BlogService) { }
+
 
   ngOnInit(): void {
     this.blogService.getalluser()
@@ -24,6 +29,10 @@ export class HomeComponent implements OnInit {
         },
       )
     ;
+  }
+  onChangePage(pageOfItems: Array<any>) {
+    // update current page of items
+    this.pageOfItems = this.blogs;
   }
 
 }

@@ -12,7 +12,12 @@ import {NavbarComponent} from './components/navbar/navbar.component';
 import { AddblogComponent } from './components/addblog/addblog.component'
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { ShwblogComponent } from './components/shwblog/shwblog.component';
-;
+import {NgxPaginationModule} from 'ngx-pagination';
+import {JwPaginationModule} from 'jw-angular-pagination';
+import { AdminComponent } from './components/admin/admin.component';
+import { DeleteComponent } from './components/delete/delete.component';
+import { UpdateComponent } from './components/update/update.component';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +27,10 @@ import { ShwblogComponent } from './components/shwblog/shwblog.component';
     HomeComponent,
     NavbarComponent,
     AddblogComponent,
-    ShwblogComponent
+    ShwblogComponent,
+    AdminComponent,
+    DeleteComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +38,9 @@ import { ShwblogComponent } from './components/shwblog/shwblog.component';
     ReactiveFormsModule,
     HttpClientModule,
     FormsModule,
-    CKEditorModule
+    CKEditorModule,
+    NgxPaginationModule,
+    JwPaginationModule
 
 
   ],
