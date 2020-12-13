@@ -22,6 +22,7 @@
     "@ckeditor/ckeditor5-angular": "^2.0.1",
     "@ckeditor/ckeditor5-build-classic": "^24.0.0",
     "bootstrap": "^4.5.3",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "jw-angular-pagination": "^1.2.0",
     "ng2-ckeditor": "^1.2.9",

@@ -1,1 +1,306 @@
-<p>admin works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from kanakku.dreamguystech.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 19:18:09 GMT -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Moetaz Brayek Admin-Dashboard</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../../../assets/admin/assets/img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+
+  <!-- Fontawesome CSS -->
+
+
+  <!-- Main CSS -->
+
+  <!--[if lt IE 9]>
+  <![endif]-->
+</head>
+<body>
+
+<!-- Main Wrapper -->
+<div class="main-wrapper">
+
+  <!-- Header -->
+  <div class="header">
+
+    <!-- Logo -->
+    <div class="header-left">
+      <a href="index-2.html" class="logo">
+        <img src="../../../assets/images/programmer.svg" alt="Logo">
+      </a>
+
+    </div>
+    <!-- /Logo -->
+
+    <!-- Sidebar Toggle -->
+
+    <!-- /Sidebar Toggle -->
+
+    <!-- Search -->
+
+    <!-- /Search -->
+
+    <!-- Mobile Menu Toggle -->
+
+    <!-- /Mobile Menu Toggle -->
+
+    <!-- Header Menu -->
+    <ul class="nav user-menu">
+
+      <!-- Flag -->
+      <!-- /Flag -->
+
+      <!-- Notifications -->
+
+      <!-- /Notifications -->
+
+      <!-- User Menu -->
+        <a routerLink="/" class="dropdown-toggle nav-link" data-toggle="dropdown">
+
+          <span class="user-img">Log Out</span>
+        </a>
+
+      <!-- /User Menu -->
+
+    </ul>
+    <!-- /Header Menu -->
+
+  </div>
+  <!-- /Header -->
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-inner slimscroll">
+      <div id="sidebar-menu" class="sidebar-menu">
+        <ul>
+          <li class="menu-title"><span>Main</span></li>
+          <li class="active">
+            <a routerLink="/admin"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+          </li>
+          <li>
+            <a routerLink="/admin/listuser"><i class="fa fa-user"></i> <span>Customers</span></a>
+          </li>
+          <li>
+            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Estimates</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- /Sidebar -->
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+    <div class="content container-fluid">
+
+      <div class="row">
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="dash-widget-header">
+										<span class="dash-widget-icon bg-1">
+											<i class="fa fa-user"></i>
+										</span>
+                <div class="dash-count">
+
+                  <div class="dash-title">Number Of Users</div>
+                  <div class="dash-counts">
+                    <p>{{totalusers}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="dash-widget-header">
+										<span class="dash-widget-icon bg-2">
+                      <i class="fa fa-sticky-note-o"></i>
+
+										</span>
+                <div class="dash-count">
+                  <div class="dash-title">Blogs</div>
+                  <div class="dash-counts">
+                    <p>{{totalblogs}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="dash-widget-header">
+										<span class="dash-widget-icon bg-3">
+											<i class="fa fa fa-key"></i>
+										</span>
+                <div class="dash-count">
+                  <div class="dash-title">Admins</div>
+                  <div class="dash-counts">
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-12">
+          <div class="card">
+            <div class="card-body">
+              <div class="dash-widget-header">
+										<span class="dash-widget-icon bg-4">
+											<i class="fa fa-comment"></i>
+										</span>
+                <div class="dash-count">
+                  <div class="dash-title">Comments</div>
+                  <div class="dash-counts">
+                    <p>{{totalcmnts}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title">Recent Users</h5>
+                </div>
+                <div class="col-auto">
+                  <a routerLink="/admin/listuser" class="btn-right btn btn-sm btn-outline-primary">
+                    View All
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+
+              <div class="table-responsive">
+
+                <table class="table table-stripped table-hover">
+                  <thead class="thead-light">
+                  <tr>
+                    <th>Customer</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th class="text-right">Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let user of users">
+                    <td>
+                      <h2 class="table-avatar">
+                        <a href="profile.html"><img class="avatar avatar-sm mr-2 avatar-img rounded-circle" src="../../../assets/admin/assets/img/profiles/avatar-04.jpg" alt="User Image">{{user.name}}</a>
+                      </h2>
+                    </td>
+                    <td>23 Nov 2020</td>
+                    <td><span class="badge bg-success-light">Active</span></td>
+                    <td class="text-right">
+                      <div class="dropdown dropdown-action">
+                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="card">
+            <div class="card-header">
+              <div class="row">
+                <div class="col">
+                  <h5 class="card-title">Recent Blogs</h5>
+                </div>
+                <div class="col-auto">
+                  <a routerLink="/admin/listblog" class="btn-right btn btn-sm btn-outline-primary">
+                    View All
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead class="thead-light">
+                  <tr>
+                    <th>Customer</th>
+                    <th>Expiry Date</th>
+                    <th>Status</th>
+                    <th class="text-right">Action</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr *ngFor="let blog of blogs">
+                    <td>
+                      <h2 class="table-avatar">
+                        <a href="profile.html"><img class="avatar avatar-sm mr-2 avatar-img rounded-circle"  src="{{blog?.fileSource}}" alt="User Image"> {{blog.title}} </a>
+                      </h2>
+                    </td>
+                    <td>5 Nov 2020</td>
+                    <td><span class="badge bg-info-light">Sent</span></td>
+                    <td class="text-right">
+                      <div class="dropdown dropdown-action">
+                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
+
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Page Wrapper -->
+
+</div>
+<!-- /Main Wrapper -->
+
+<!-- jQuery -->
+<script src="../../../assets/admin/assets/js/jquery-3.5.1.min.js"></script>
+
+<!-- Bootstrap Core JS -->
+<script src="../../../assets/admin/assets/js/popper.min.js"></script>
+<script src="../../../assets/admin/assets/js/bootstrap.min.js"></script>
+
+<!-- Feather Icon JS -->
+<script src="../../../assets/admin/assets/js/feather.min.js"></script>
+
+<!-- Slimscroll JS -->
+<script src="../../../assets/admin/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Chart JS -->
+<script src="../../../assets/admin/assets/plugins/apexchart/apexcharts.min.js"></script>
+<script src="../../../assets/admin/assets/plugins/apexchart/chart-data.js"></script>
+
+<!-- Custom JS -->
+<script src="../../../assets/admin/assets/js/script.js"></script>
+
+</body>
+
+<!-- Mirrored from kanakku.dreamguystech.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 12 Dec 2020 19:18:24 GMT -->
+</html>

@@ -17,6 +17,8 @@ import {JwPaginationModule} from 'jw-angular-pagination';
 import { AdminComponent } from './components/admin/admin.component';
 import { DeleteComponent } from './components/delete/delete.component';
 import { UpdateComponent } from './components/update/update.component';
+import { ListblogsComponent } from './components/listblogs/listblogs.component';
+import { ListusersComponent } from './components/listusers/listusers.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { UpdateComponent } from './components/update/update.component';
     ShwblogComponent,
     AdminComponent,
     DeleteComponent,
-    UpdateComponent
+    UpdateComponent,
+    ListblogsComponent,
+    ListusersComponent
   ],
   imports: [
     BrowserModule,

@@ -31,4 +31,5 @@ export class NavbarComponent implements OnInit {
     // return true if the current page is login
     return this.router.url.match('^/hox');
   }
+
 }
