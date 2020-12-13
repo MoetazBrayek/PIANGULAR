@@ -1,0 +1,19 @@
+{
+  "/api": {
+    "target": "https://newsapi.org/v2/everything?q=Technology&pagesize=100&page=1&apiKey=6024c6c3dbdb453b9ac12fa03285db9f",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api": ""
+    }
+  },
+  "/back/*": {
+    "target": "http://localhost:3000",
+    "secure": false,
+    "logLevel": "debug",
+    "changeOrigin": true,
+    "pathRewrite": {"^/back": ""}
+    }
+
+}
+

@@ -33,7 +33,7 @@
 
 
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary">
-    <a class="navbar-brand" href="#"><img style="width: 75px" src="../../../assets/unnamed.gif"></a>
+    <a class="navbar-brand" routerLink="/home"><img style="width: 75px" src="../../../assets/coding.svg" style="width: 40px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,16 +47,15 @@
       </ul>
 
 
-      <a routerLink="/" class="btn btn-dark ">Log Out
-        <i class="fa fa-sign-out" aria-hidden="true"></i>
+      <a routerLink="/" class="btn btn-dark "><img src="../../../assets/log-out.svg" style="width: 30px">
+
       </a>
 
 
     </div>
+
   </nav>
 </div>
-
-
 
 
 
@@ -64,7 +63,7 @@
 <div *ngIf="isAdd()">
 
   <nav class="navbar navbar-icon-top navbar-expand-lg navbar-dark bg-secondary">
-    <a class="navbar-brand" href="#"><img style="width: 75px" src="../../../assets/coding.svg"></a>
+    <a class="navbar-brand" routerLink="/home"><img style="width: 75px" src="../../../assets/coding.svg" style="width: 40px"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -72,27 +71,19 @@
     <div class="collapse navbar-collapse" >
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" routerLink="home">
-            <i class="fa fa-home"></i>
-            Home
 
-          </a>
 
-          <a class="nav-link" routerLink="add">
-            <i class="fa fa-newspaper-o"></i>
-            Add Blog
-
-          </a>
         </li>
       </ul>
 
 
-      <a routerLink="/" class="btn btn-dark ">Log Out
-        <i class="fa fa-sign-out" aria-hidden="true"></i>
+      <a routerLink="/" class="btn btn-dark "><img src="../../../assets/log-out.svg" style="width: 30px">
+
       </a>
 
 
     </div>
+
   </nav>
 </div>
 

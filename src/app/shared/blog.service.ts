@@ -3,7 +3,6 @@ import {HttpClient} from '@angular/common/http';
 import {Blog} from '../model/blog.model';
 import {Observable} from 'rxjs';
 import {ActivatedRoute, Router} from '@angular/router';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -35,6 +34,11 @@ export class BlogService {
 
     return this
       .http.get<any>('http://localhost:3000/blogs/');
+  }
+
+  getallnews() {
+
+    return this.http.get<any>('http://localhost:4200/api');
   }
   addcmnt(data: any): Observable<any> {
     console.log(data);

@@ -1,5 +1,6 @@
 <body>
-<div class="container blogslist">
+<div class="d-flex  cleanhome">
+<div class="container col-6">
 
 
 
@@ -17,7 +18,7 @@
 
               </h4>
               <div ng-init="limit=100">
-              <p [innerHTML]="blog.content "></p>
+              <p [innerHTML]="blog.content " ></p>
               </div>
             </div>
 
@@ -33,7 +34,27 @@
     </div>
     <!-- /.col-lg-9 -->
 
-  <!-- /.row -->
+  <!-- l menu li ala jnab ya star oster || since we are living in facebook and instgram world this looks amazin i geuss ! -->
 
+  <div class="col-3" data-version="1" id="PopularPosts1">
+    <div class="latest-title cf"><h3>Popular This Week</h3></div>
+    <div class="widget-content popular-posts" *ngFor="let blo of news.articles | slice : 0:5">
+      <div class="cf pop-article clear">
+          <div class="side-pop-image">
+            <figure class="pop-image">
+              <img alt="Watch Out! Adrozek Malware Hijacking Chrome, Firefox, Edge, Yandex Browsers" border="0" class=" lazyloaded" data-src="" height="72" src="{{blo.urlToImage}}" title="{{blo.description}}" width="72">
+            </figure>
+          </div>
+       <a href="{{blo.url}}"> {{blo.description}} </a>
+          <div class="pop-desc">
+            <div class="pop-title">{{blo.author}}</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- /.row -->
+</div>
 
 </body>

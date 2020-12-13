@@ -14,7 +14,10 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 export class LoginComponent implements OnInit {
   users: User[];
   form: FormGroup;
-  errorMsg: string;
+  emailMsg: string;
+  PasswordMsg: string;
+  erroMsg: string;
+
 
   constructor(private fb: FormBuilder, public userService: UserService,
               private router: Router) {
@@ -25,11 +28,21 @@ export class LoginComponent implements OnInit {
         this.users = resp;
         const logeed = data.value;
         for (const user of this.users) {
-          if (user.email === logeed.email && user.password === logeed.password && user.role === 'admin' ) {
+          if (logeed.email === ''){
+            this.emailMsg = 'your email  is missing !';
+          } else if (logeed.password === ''){
+            this.emailMsg = '';
+            this.PasswordMsg = 'your email  is missing !';
+          }
+          else if (user.email === logeed.email && user.password === logeed.password && user.role === 'admin' ) {
             this.router.navigate(['admin']);
           }
           else if (user.email === logeed.email && user.password === logeed.password) {
             this.router.navigate(['home']);
+          }
+          else{
+            this.PasswordMsg = '';
+            this.erroMsg = 'your credential is wrong !!';
           }
         }
       }

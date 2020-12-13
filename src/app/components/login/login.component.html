@@ -3,9 +3,14 @@
 
 <!-- Mirrored from brandio.io/envato/iofrm/html/login4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Dec 2020 21:22:01 GMT -->
 <head>
+
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iofrm</title>
+  <title>Login Page</title>
+
+  <link rel="alternate" hreflang="" href="http://">
+
 </head>
 <body>
 <div class="form-body">
@@ -33,7 +38,11 @@
           </div>
           <form #data="ngForm">
             <input   class="form-control" type="text" name="email" placeholder="E-mail Address" ngModel name="email" #email="ngModel">
+            <div *ngIf="emailMsg" class="alert alert-danger">your email is missing</div>
             <input  class="form-control" type="password" name="password" placeholder="Password" ngModel name="password" #password="ngModel">
+            <div *ngIf="PasswordMsg" class="alert alert-danger">your password is missing</div>
+            <div *ngIf="erroMsg" class="alert alert-danger">Not A Valid Login</div>
+
             <div class="form-button">
               <button id="submit" type="submit" class="ibtn"  (click)="loginchek(data)">Login</button>
             </div>

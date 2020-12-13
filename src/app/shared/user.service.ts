@@ -3,25 +3,25 @@ import {HttpClient} from '@angular/common/http';
 import {User} from '../model/user.model';
 import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-
   constructor(private http: HttpClient, private router: Router) {
   }
 
   getUserbyid(id: number) {
-    return this.http.get('http://localhost:3000/users/' + id);
+    return this.http.get('back/users' + id);
   }
 
   deleteuser(id: number) {
-    return this.http.delete('http://localhost:3000/users/' + id);
+    return this.http.delete('back/users' + id);
   }
 
   updateUser(data: any, id: any): Observable<any> {
-    const url: string = 'http://localhost:3000/users/' + id;
+    const url: string = 'back/users' + id;
     return this.http.put(url, data);
   }
 
@@ -29,18 +29,15 @@ export class UserService {
   getalluser() {
 
     return this
-      .http.get<any>('http://localhost:3000/users/');
+      .http.get<any>('back/users');
   }
   login(data: any): Observable<any> {
     console.log(data);
-    const url = 'http://localhost:3000/login/';
-    return this.http.post(url, data);
+    return this.http.post('back/users', data);
   }
 
   adduser(data: any): Observable<any> {
-    console.log(data);
-    const url = 'http://localhost:3000/users/';
-    return this.http.post(url, data);
+    return this.http.post('back/users', data);
   }
 
   submit(form) {
