@@ -24,6 +24,7 @@ const routes: Routes = [
   // by the way go back and user children is better ..
   {path: 'admin', component: AdminComponent},
   {path: 'admin/listuser', component: ListusersComponent},
+  {path: 'admin/addblog', component: AddblogComponent},
   {path: 'admin/listblog', component: ListblogsComponent},
   {path: 'admin/update/:id', component: UpdateComponent},
   {path: 'admin/delete/:id', component: DeleteComponent},
