@@ -11,6 +11,7 @@ import {UpdateComponent} from './components/update/update.component';
 import {DeleteComponent} from './components/delete/delete.component';
 import {ListusersComponent} from './components/listusers/listusers.component';
 import {ListblogsComponent} from './components/listblogs/listblogs.component';
+import {DeleteuserComponent} from './components/deleteuser/deleteuser.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   {path: 'admin/listuser', component: ListusersComponent},
   {path: 'admin/listblog', component: ListblogsComponent},
   {path: 'admin/update/:id', component: UpdateComponent},
-  {path: 'admin/delete/:id', component: DeleteComponent}
+  {path: 'admin/delete/:id', component: DeleteComponent},
+  {path: 'admin/deleteuser/:id', component: DeleteuserComponent}
 ];
 
 @NgModule({

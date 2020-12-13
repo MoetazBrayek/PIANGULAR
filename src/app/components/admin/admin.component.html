@@ -86,7 +86,7 @@
             <a routerLink="/admin/listuser"><i class="fa fa-user"></i> <span>Customers</span></a>
           </li>
           <li>
-            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Estimates</span></a>
+            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Blogs</span></a>
           </li>
 
         </ul>
@@ -207,14 +207,14 @@
                   <tr *ngFor="let user of users">
                     <td>
                       <h2 class="table-avatar">
-                        <a href="profile.html"><img class="avatar avatar-sm mr-2 avatar-img rounded-circle" src="../../../assets/admin/assets/img/profiles/avatar-04.jpg" alt="User Image">{{user.name}}</a>
+                        <a ><img class="avatar avatar-sm mr-2 avatar-img rounded-circle" src="../../../assets/admin/assets/img/profiles/avatar-04.jpg" alt="User Image">{{user.name}}</a>
                       </h2>
                     </td>
                     <td>23 Nov 2020</td>
                     <td><span class="badge bg-success-light">Active</span></td>
                     <td class="text-right">
                       <div class="dropdown dropdown-action">
-                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
+                        <a routerLink="/admin/listuser" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
                       </div>
                     </td>
                   </tr>
@@ -254,14 +254,14 @@
                   <tr *ngFor="let blog of blogs">
                     <td>
                       <h2 class="table-avatar">
-                        <a href="profile.html"><img class="avatar avatar-sm mr-2 avatar-img rounded-circle"  src="{{blog?.fileSource}}" alt="User Image"> {{blog.title}} </a>
+                        <a ><img class="avatar avatar-sm mr-2 avatar-img rounded-circle"  src="{{blog?.fileSource}}" alt="User Image"> {{blog.title}} </a>
                       </h2>
                     </td>
                     <td>5 Nov 2020</td>
                     <td><span class="badge bg-info-light">Sent</span></td>
                     <td class="text-right">
                       <div class="dropdown dropdown-action">
-                        <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
+                        <a routerLink="/admin/listblog" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-arrow-right"></i></a>
 
                       </div>
                     </td>

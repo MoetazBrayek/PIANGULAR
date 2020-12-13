@@ -12,12 +12,6 @@
       "id": 2
     },
     {
-      "email": "azeeaz@eazeaze",
-      "password": "$2a$10$HIFDavbukfPHgdSxREa1LOuvhzmsKvuzSniFcj8LEh1ib9WCHSQNq",
-      "name": "azeaze",
-      "id": 3
-    },
-    {
       "email": "rami@lhadef.com",
       "password": "$2a$10$R0OM1ve5ubQ/s8owU4hVNeFlQSRmsmhxk33aNnR8EQJ9zX4Z/LDdi",
       "name": "rami",
@@ -28,12 +22,6 @@
       "password": "$2a$10$NXEiZkGPMMqXFxqeAKiBaOnpkJiBh1aYNIGsISxgwanGHmXiEiqZO",
       "name": "rami2",
       "id": 5
-    },
-    {
-      "name": "rami",
-      "email": "rami@rami.rami",
-      "password": "rami",
-      "id": 6
     }
   ],
   "blogs": [

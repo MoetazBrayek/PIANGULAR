@@ -5,8 +5,8 @@ import {BlogService} from '../../shared/blog.service';
 
 @Component({
   selector: 'app-delete',
-  templateUrl: './delete.component.html',
-  styleUrls: ['./delete.component.css']
+  templateUrl: './deleteuser.component.html',
+  styleUrls: ['./deleteuser.component.css']
 })
 export class DeleteuserComponent implements OnInit {
   id;
@@ -17,7 +17,7 @@ export class DeleteuserComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get('id');
     this.userService
       .deleteuser(this.id)
-      .subscribe(data => this.router.navigate(['admin/listblog']));
+      .subscribe(data => this.router.navigate(['admin/listuser']));
 
   }
 }

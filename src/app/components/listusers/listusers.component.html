@@ -88,7 +88,7 @@
             <a routerLink="/admin/listuser"><i class="fa fa-user"></i> <span>Customers</span></a>
           </li>
           <li>
-            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Estimates</span></a>
+            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Blogs</span></a>
           </li>
 
         </ul>
@@ -107,7 +107,7 @@
           <div class="col">
             <h3 class="page-title">Customers</h3>
             <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index-2.html">Dashboard</a>
+              <li class="breadcrumb-item"><a routerLink="/admin">Dashboard</a>
               </li>
               <li class="breadcrumb-item active">Customers</li>
             </ul>
@@ -149,18 +149,19 @@
           <div class="card card-table">
             <div class="card-body">
               <div class="table-responsive">
+                <input class="form-control" type="text" name="email" [(ngModel)]="email" (ngModelChange)="Search()" placeholder="Enter Email">
                 <table class="table table-center table-hover datatable">
                   <thead class="thead-light">
                   <tr>
                     <th>Customer</th>
-                    <th>Email</th>
+                    <th (click)="sort('id')"><i class="fa fa-sort"></i> Email</th>
                     <th>Registered On</th>
                     <th>Status</th>
                     <th class="text-right">Actions</th>
                   </tr>
                   </thead>
                   <tbody>
-                  <tr *ngFor="let user of users">
+                  <tr *ngFor="let user of users | orderBy: key : reverse">
                     <td>
                       <h2 class="table-avatar">
                         <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="../../../assets/unnamed.gif" alt="User Image"></a>
@@ -172,7 +173,7 @@
                     <td><span class="badge badge-pill bg-success-light">Active</span></td>
                     <td class="text-right">
                       <a href="edit-customer.html" class="btn btn-sm btn-white text-success mr-2"><i class="fa fa-ban mr-1"></i> Block</a>
-                      <a href="javascript:void(0);" class="btn btn-sm btn-white text-danger mr-2"><i class="fa fa-trash"></i>Delete</a>
+                      <a [routerLink]="['/admin/deleteuser/',user.id]" class="btn btn-sm btn-white text-danger mr-2"><i class="fa fa-trash"></i>Delete</a>
                     </td>
                   </tr>
 

@@ -89,7 +89,7 @@
             <a routerLink="/admin/listuser"><i class="fa fa-user"></i> <span>Customers</span></a>
           </li>
           <li class="active">
-            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Estimates</span></a>
+            <a routerLink="/admin/listblog"><i class="fa fa-archive"></i> <span>Blogs</span></a>
           </li>
 
         </ul>
@@ -106,11 +106,11 @@
       <div class="page-header">
         <div class="row align-items-center">
           <div class="col">
-            <h3 class="page-title">Customers</h3>
+            <h3 class="page-title">Blogs</h3>
             <ul class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index-2.html">Dashboard</a>
+              <li class="breadcrumb-item"><a routerLink="/admin">Dashboard</a>
               </li>
-              <li class="breadcrumb-item active">Customers</li>
+              <li class="breadcrumb-item active">Blogs</li>
             </ul>
           </div>
         </div>
@@ -150,6 +150,8 @@
           <div class="card card-table">
             <div class="card-body">
               <div class="table-responsive">
+
+                <input class="form-control" type="text" name="title" [(ngModel)]="title" (ngModelChange)="Search()" placeholder="Enter Title">
                 <table class="table table-center table-hover datatable">
                   <thead class="thead-light">
                   <tr>

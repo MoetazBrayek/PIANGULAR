@@ -10,6 +10,8 @@ import {BlogService} from '../../shared/blog.service';
 export class ListblogsComponent implements OnInit {
 
   blogs;
+  title: any;
+
 
   constructor(private blogService: BlogService) { }
 
@@ -25,6 +27,15 @@ export class ListblogsComponent implements OnInit {
         },
       )
     ;
+  }
+  Search(){
+    if (this.title === '') {
+      this.ngOnInit();
+    }else {
+      this.blogs = this.blogs.filter(res => {
+        return res.title.toLowerCase().match(this.title.toLowerCase());
+      });
+    }
   }
 
 }

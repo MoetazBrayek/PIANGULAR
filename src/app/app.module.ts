@@ -19,6 +19,9 @@ import { DeleteComponent } from './components/delete/delete.component';
 import { UpdateComponent } from './components/update/update.component';
 import { ListblogsComponent } from './components/listblogs/listblogs.component';
 import { ListusersComponent } from './components/listusers/listusers.component';
+import {DeleteuserComponent} from './components/deleteuser/deleteuser.component';
+import {Ng2OrderModule} from 'ng2-order-pipe';
+import {Ng2SearchPipe, Ng2SearchPipeModule} from 'ng2-search-filter';
 
 
 @NgModule({
@@ -34,7 +37,8 @@ import { ListusersComponent } from './components/listusers/listusers.component';
     DeleteComponent,
     UpdateComponent,
     ListblogsComponent,
-    ListusersComponent
+    ListusersComponent,
+    DeleteuserComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +48,9 @@ import { ListusersComponent } from './components/listusers/listusers.component';
     FormsModule,
     CKEditorModule,
     NgxPaginationModule,
-    JwPaginationModule
+    JwPaginationModule,
+    Ng2OrderModule,
+    Ng2SearchPipeModule
 
 
   ],
