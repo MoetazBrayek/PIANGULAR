@@ -6,10 +6,10 @@
 
 <h2>V1</h2>
 
-<img src="https://i.imgur.com/4gbC9bC.png" data-canonical-src="https://i.ibb.co/0YrhRmv/1.png" style="max-width:100%;">
-<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/vhL1YCH/2.png" style="max-width:100%;">
-<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/0qvYhH1/3.png" style="max-width:100%;">
-<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/XJVX5xM/4.png" style="max-width:100%;">
+<img src="https://i.ibb.co/0YrhRmv/1.png" data-canonical-src="https://i.ibb.co/0YrhRmv/1.png" style="max-width:100%;">
+<img src="https://i.ibb.co/vhL1YCH/2.png" data-canonical-src="https://i.ibb.co/vhL1YCH/2.png" style="max-width:100%;">
+<img src="https://i.ibb.co/0qvYhH1/3.png" data-canonical-src="https://i.ibb.co/0qvYhH1/3.png" style="max-width:100%;">
+<img src="https://i.ibb.co/XJVX5xM/4.png" data-canonical-src="https://i.ibb.co/XJVX5xM/4.png" style="max-width:100%;">
 
 
 <h2>Usage</h2>
