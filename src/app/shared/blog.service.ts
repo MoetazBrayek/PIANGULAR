@@ -3,6 +3,9 @@ import {HttpClient} from '@angular/common/http';
 import {Blog} from '../model/blog.model';
 import {Observable} from 'rxjs';
 import {ActivatedRoute, Router} from '@angular/router';
+import {environment} from '../../environments/environment';
+const api = environment.apiUrl;
+const apiblog = api + '/blogs/';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,43 +16,39 @@ export class BlogService {
   }
 
   getUserbyid(id: number) {
-    return this.http.get('http://localhost:3000/blogs/' + id);
+    return this.http.get(apiblog + id);
   }
 
   deleteuser(id: number) {
-    return this.http.delete('http://localhost:3000/blogs/' + id);
+    return this.http.delete(apiblog + id);
   }
 
   updateUser(data: any, id: any): Observable<any> {
-    const url: string = 'http://localhost:3000/blogs/' + id;
-    return this.http.put(url, data);
+    return this.http.put(apiblog + id, data);
   }
   getallcmnts() {
 
     return this
-      .http.get<any>('http://localhost:3000/comments/');
+      .http.get<any>(api + '/comments/');
   }
 
   getalluser() {
 
     return this
-      .http.get<any>('http://localhost:3000/blogs/');
+      .http.get<any>(apiblog);
   }
 
   getallnews() {
-
+    // move it to env
     return this.http.get<any>('http://localhost:4200/api');
   }
   addcmnt(data: any): Observable<any> {
-    console.log(data);
-    const url = 'http://localhost:3000/comments/';
-    return this.http.post(url, data);
+    return this.http.post(api + '/comments/', data);
   }
 
   adduser(data: any): Observable<any> {
     console.log(data);
-    const url = 'http://localhost:3000/blogs';
-    return this.http.post(url, data);
+    return this.http.post(apiblog, data);
   }
 
   submit(form) {

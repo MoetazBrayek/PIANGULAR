@@ -4,7 +4,7 @@ import {User} from '../model/user.model';
 import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
-
+const api = environment.apiUrl;
 @Injectable({
   providedIn: 'root'
 })
@@ -13,15 +13,15 @@ export class UserService {
   }
 
   getUserbyid(id: number) {
-    return this.http.get('back/users' + id);
+    return this.http.get(api + '/users' + id);
   }
 
   deleteuser(id: number) {
-    return this.http.delete('back/users' + id);
+    return this.http.delete(api + '/users' + id);
   }
 
   updateUser(data: any, id: any): Observable<any> {
-    const url: string = 'back/users' + id;
+    const url: string = api + '/users' + id;
     return this.http.put(url, data);
   }
 
@@ -29,15 +29,15 @@ export class UserService {
   getalluser() {
 
     return this
-      .http.get<any>('back/users');
+      .http.get<any>(api + '/users');
   }
   login(data: any): Observable<any> {
     console.log(data);
-    return this.http.post('back/users', data);
+    return this.http.post(api + '/users', data);
   }
 
   adduser(data: any): Observable<any> {
-    return this.http.post('back/users', data);
+    return this.http.post(api + '/users', data);
   }
 
   submit(form) {
