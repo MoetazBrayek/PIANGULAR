@@ -16,7 +16,7 @@ export class ListblogsComponent implements OnInit {
   constructor(private blogService: BlogService) { }
 
   ngOnInit(): void {
-    this.blogService.getalluser()
+    this.blogService.getallblogs()
       .subscribe(
         (data) => {
           this.blogs = data;

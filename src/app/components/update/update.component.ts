@@ -62,14 +62,14 @@ export class UpdateComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
     console.log(this.id);
-    this.blogService.getUserbyid(this.id).subscribe((result) => {
+    this.blogService.getBlogbyid(this.id).subscribe((result) => {
       this.blog = result;
       this.form.patchValue(this.blog);
     });
   }
   update() {
     this.blogService
-      .updateUser(this.form.value, this.id)
+      .updateBlog(this.form.value, this.id)
       .subscribe(() => {
         this.router.navigate(['/home']);
       });

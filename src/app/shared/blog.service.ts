@@ -15,15 +15,15 @@ export class BlogService {
   constructor(private http: HttpClient, private router: Router, private  rout: ActivatedRoute) {
   }
 
-  getUserbyid(id: number) {
+  getBlogbyid(id: number) {
     return this.http.get(apiblog + id);
   }
 
-  deleteuser(id: number) {
+  deleteblog(id: number) {
     return this.http.delete(apiblog + id);
   }
 
-  updateUser(data: any, id: any): Observable<any> {
+  updateBlog(data: any, id: any): Observable<any> {
     return this.http.put(apiblog + id, data);
   }
   getallcmnts() {
@@ -32,7 +32,7 @@ export class BlogService {
       .http.get<any>(api + '/comments/');
   }
 
-  getalluser() {
+  getallblogs() {
 
     return this
       .http.get<any>(apiblog);
@@ -46,13 +46,13 @@ export class BlogService {
     return this.http.post(api + '/comments/', data);
   }
 
-  adduser(data: any): Observable<any> {
+  addblog(data: any): Observable<any> {
     console.log(data);
     return this.http.post(apiblog, data);
   }
 
   submit(form) {
-    this.adduser(form)
+    this.addblog(form)
       .subscribe(() => {
           this.router.navigate(['/home']);
 

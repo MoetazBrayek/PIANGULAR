@@ -16,7 +16,7 @@ export class DeleteComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.route.snapshot.paramMap.get('id');
     this.blogService
-      .deleteuser(this.id)
+      .deleteblog(this.id)
       .subscribe(data => this.router.navigate(['admin/listblog']));
 
   }

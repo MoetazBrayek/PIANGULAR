@@ -28,7 +28,7 @@ export class ShwblogComponent implements OnInit {
   ngOnInit(): void {
     this.id = this.router.snapshot.paramMap.get('id');
     console.log(this.id);
-    this.blogService.getUserbyid(this.id).subscribe((result) => {
+    this.blogService.getBlogbyid(this.id).subscribe((result) => {
       this.blog = result;
     });
     this.blogService.getallcmnts().subscribe((res) => {
