@@ -6,7 +6,7 @@
 <a href="https://github.com/MisterSpyx/Python-Sender-/"><img src="https://img.shields.io/badge/Supported%20OS-Linux%2FWindows-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux%2FWindows-brightgreengreen.svg" style="max-width:100%;"></a></p>
 <p> 🐱‍💻 Simple Angular Blog  🐱‍💻  </p>
 
-<h2>V1</h2>
+<h2>V1 Blog Post/Comment Esprit 2020</h2>
 
 <img src="https://i.ibb.co/0YrhRmv/1.png" data-canonical-src="https://i.ibb.co/0YrhRmv/1.png" style="max-width:100%;">
 <img src="https://i.ibb.co/vhL1YCH/2.png" data-canonical-src="https://i.ibb.co/vhL1YCH/2.png" style="max-width:100%;">
