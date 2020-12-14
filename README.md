@@ -18,6 +18,9 @@
 <h3>npm install</h3>
 <h3>npm install json-server</h3>
 <h1>json-server --watch db.json</h1>
+<hr>
+<h3>Extern Api : NewsApi</h3>
+<a href="https://newsapi.org/"><img src="https://i.ibb.co/fv9kfQV/Screenshot-3.png" alt="Build" data-canonical-src="https://i.ibb.co/fv9kfQV/Screenshot-3.png" style="max-width:100%;"></a></p>
 
 
 ## Installation [Linux](https://wikipedia.org/wiki/Linux) [![alt tag](http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)](https://fr.wikipedia.org/wiki/Linux)
