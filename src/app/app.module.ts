@@ -22,6 +22,7 @@ import { ListusersComponent } from './components/listusers/listusers.component';
 import {DeleteuserComponent} from './components/deleteuser/deleteuser.component';
 import {Ng2OrderModule} from 'ng2-order-pipe';
 import {Ng2SearchPipe, Ng2SearchPipeModule} from 'ng2-search-filter';
+import { CommentsComponent } from './components/comments/comments.component';
 
 
 @NgModule({
@@ -39,6 +40,7 @@ import {Ng2SearchPipe, Ng2SearchPipeModule} from 'ng2-search-filter';
     ListblogsComponent,
     ListusersComponent,
     DeleteuserComponent,
+    CommentsComponent,
   ],
   imports: [
     BrowserModule,

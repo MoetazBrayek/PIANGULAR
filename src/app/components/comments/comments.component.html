@@ -1,0 +1,24 @@
+
+<div class="container border">
+  <div class="row">
+    <div class="col-12">
+      <div class="comments">
+        <div class="comment-box add-comment">
+          <span class="commenter-pic">
+         <img src="../../../assets/user-male.png" class="img-fluid">
+          </span>
+          <span class="commenter-name">
+            <form [formGroup]="form" (ngSubmit)="blogService.submitcmnt(form.value)" class="commentclass">
+              <input type="hidden" name="blogid" formControlName="blogid" value="{{id}}" [(ngModel)]="id">
+              <input type="text" placeholder="your Name" name="name" formControlName="name">
+              <textarea type="text" placeholder="Add a public comment" name="content" formControlName="content"
+                        class="form-control texaread"></textarea>
+            <button class="btn btn-primary" type="submit" [disabled]="!form.get('name').valid || !form.get('content').valid"   >Comment</button>
+              </form>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

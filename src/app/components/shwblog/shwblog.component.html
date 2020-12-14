@@ -30,50 +30,43 @@
   <hr class="">
 
 </div>
+<form [formGroup]="form">
 
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <div class="comments">
-        <div class="comment-box add-comment">
-          <span class="commenter-pic">
-            <!-- if you read this line ! sorry to but i hate css :X -->
-            <img src="../../../assets/user-male.png" class="img-fluid">
-          </span>
-          <span class="commenter-name">
-            <form [formGroup]="form" (ngSubmit)="blogService.submitcmnt(form.value)">
-              <input  type="hidden"  name="blogid" formControlName="blogid"  value="{{id}}" [(ngModel)]="id">
-              <input type="text" placeholder="your Name" name="name" formControlName="name" >
-              <textarea type="text" placeholder="Add a public comment" name="content" formControlName="content"  class="form-control texaread"></textarea>
-            <button type="submit" class="btn btn-default" >Comment</button>
-              </form>
-          </span>
-        </div>
+  <app-comments-child [id]="id" [form]="form"></app-comments-child>
 
-      </div>
-    </div>
-  </div>
-</div>
+</form>
 <br><br>
 <br><br>
 <div class="container">
-<div *ngFor="let cm of cmnts">
-<div *ngIf="cm.blogid == id">
-
-<div class="comment-box" >
+  <div class="comment-box">
           <span class="commenter-pic">
             <img src="../../../assets/user-male.png" class="img-fluid ihatecss">
           </span>
-  <span class="commenter-name">
-            <a href="">{{cm.name}}</a> <span class="comment-time"> </span>
+    <span class="commenter-name">
+            <a href="">{{form.value.name}}</a> <span class="comment-time"> </span>
           </span>
-  <p class="comment-txt more">{{cm.content}}</p>
-  <div class="comment-meta">
-  </div>
+    <p class="comment-txt more">{{form.value.content}}</p>
+    <div class="comment-meta">
+    </div>
   </div>
 
-</div>
-</div>
+  <div *ngFor="let cm of cmnts">
+    <div *ngIf="cm.blogid == id">
+
+      <div class="comment-box">
+          <span class="commenter-pic">
+            <img src="../../../assets/user-male.png" class="img-fluid ihatecss">
+          </span>
+        <span class="commenter-name">
+            <a href="">{{cm.name}}</a> <span class="comment-time"> </span>
+          </span>
+        <p class="comment-txt more">{{cm.content}}</p>
+        <div class="comment-meta">
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 </body>
 </html>

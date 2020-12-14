@@ -22,9 +22,7 @@ export class ShwblogComponent implements OnInit {
       blogid: ['', Validators.required],
     });
 }
-  addComment(form){
 
-  }
   ngOnInit(): void {
     this.id = this.router.snapshot.paramMap.get('id');
     console.log(this.id);
