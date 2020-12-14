@@ -1,27 +1,46 @@
-# App
+<h1>Angular Blog With Json-Server "Fake Backend" </h1>
+<p><a href="https://github.com/MoetazBrayek/PIANGULAR"></a>
+<a href="https://github.com/MoetazBrayek/PIANGULAR"><img src="https://img.shields.io/badge/Release-Stable-orange.svg" alt="Stage" data-canonical-src="https://img.shields.io/badge/Release-Stable-orange.svg" style="max-width:100%;"></a>
+<a href="https://github.com/MisterSpyx/Python-Sender-/"><img src="https://img.shields.io/badge/Supported%20OS-Linux%2FWindows-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux%2FWindows-brightgreengreen.svg" style="max-width:100%;"></a></p>
+<p> 🐱‍💻 Simple Angular Blog  🐱‍💻  </p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.12.
+<h2>V1</h2>
 
-## Development server
+<img src="https://i.imgur.com/4gbC9bC.png" data-canonical-src="https://i.ibb.co/0YrhRmv/1.png" style="max-width:100%;">
+<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/vhL1YCH/2.png" style="max-width:100%;">
+<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/0qvYhH1/3.png" style="max-width:100%;">
+<img src="https://i.imgur.com/vXggEdd.png" data-canonical-src="https://i.ibb.co/XJVX5xM/4.png" style="max-width:100%;">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<h2>Usage</h2>
+<h3>npm install</h3>
+<h3>npm install json-server</h3>
+<h1>json-server --watch db.json</h1>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Installation [Linux](https://wikipedia.org/wiki/Linux) [![alt tag](http://icons.iconarchive.com/icons/dakirby309/simply-styled/32/OS-Linux-icon.png)](https://fr.wikipedia.org/wiki/Linux)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```bash
+git clone https://github.com/MoetazBrayek/PIANGULAR.git
+cd PIANGULAR
+npm i
+json-server --watch db.json
+npm start
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Installation [Windows ](https://wikipedia.org/wiki/Microsoft_Windows)[![alt tag](http://icons.iconarchive.com/icons/tatice/cristal-intense/32/Windows-icon.png)](https://fr.wikipedia.org/wiki/Microsoft_Windows)
+```bash
+git clone https://github.com/MoetazBrayek/PIANGULAR.git
+cd PIANGULAR
+npm i
+json-server --watch db.json
+npm start
+```
+<h2>Version 1</h2>
+<strong>Current version is 1</strong>
+<strong>What's New </strong>
+<p>• speed up<p>
+<p>• Bug fixes<p>
+  <h1>More Tools In My Facebook</h1>
+https://www.facebook.com/007MrSpy
