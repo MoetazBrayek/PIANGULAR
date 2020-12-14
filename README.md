@@ -1,5 +1,5 @@
 <h1>Angular Blog With Json-Server "Fake Backend" </h1>
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" style="width:20%;">
+<img src="https://www.bryntum.com/wp-content/uploads/2019/09/Angular-Logo.png" data-canonical-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" width="100" height="100" >
 
 <p><a href="https://github.com/MoetazBrayek/PIANGULAR"></a>
 <a href="https://github.com/MoetazBrayek/PIANGULAR"><img src="https://img.shields.io/badge/Release-Stable-orange.svg" alt="Stage" data-canonical-src="https://img.shields.io/badge/Release-Stable-orange.svg" style="max-width:100%;"></a>
