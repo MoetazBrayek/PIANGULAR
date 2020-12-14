@@ -8,7 +8,7 @@ import {Router} from '@angular/router';
 @Component({
   selector: 'app-addblog',
   templateUrl: './addblog.component.html',
-  styleUrls: ['./addblog.component.css']
+  styleUrls: ['../admin/admin.component.css']
 })
 export class AddblogComponent implements OnInit {
   public Editor = ClassicEditor;

@@ -6,7 +6,7 @@ import {BlogService} from '../../shared/blog.service';
 @Component({
   selector: 'app-delete',
   templateUrl: './deleteuser.component.html',
-  styleUrls: ['./deleteuser.component.css']
+  styleUrls: ['../admin/admin.component.css']
 })
 export class DeleteuserComponent implements OnInit {
   id;

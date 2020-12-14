@@ -9,7 +9,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css', './login.component2.css']
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
   users: User[];

@@ -7,7 +7,7 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 @Component({
   selector: 'app-update',
   templateUrl: './update.component.html',
-  styleUrls: ['./update.component.css']
+  styleUrls: ['../admin/admin.component.css']
 })
 export class UpdateComponent implements OnInit {
   id;

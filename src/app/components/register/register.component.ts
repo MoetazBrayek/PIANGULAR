@@ -6,7 +6,7 @@ import {Router} from '@angular/router';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css', './register.component2.css']
+  styleUrls: ['../login/login.component.css']
 })
 export class RegisterComponent implements OnInit {
   form: FormGroup;

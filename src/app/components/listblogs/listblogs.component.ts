@@ -5,7 +5,7 @@ import {BlogService} from '../../shared/blog.service';
 @Component({
   selector: 'app-listblogs',
   templateUrl: './listblogs.component.html',
-  styleUrls: ['./listblogs.component.css']
+  styleUrls: ['../admin/admin.component.css']
 })
 export class ListblogsComponent implements OnInit {
 
